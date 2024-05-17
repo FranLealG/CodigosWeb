@@ -1,0 +1,141 @@
+/*
+CSS - cascada style sheets - jerarquia: ID-CLASS-ETIQUETA
+
+Selectores Básicos
+etiqueta{
+    propiedad: valor;
+}
+.clase{
+    propiedad: valor;
+}
+#id{
+    propiedad: valor;
+}
+.clase > descendientedirecto{
+    propiedad: valor;
+}
+*/
+/* CSS RESERT
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+*/
+h2 {
+    color: blue;
+    font-size: 20;
+}
+
+.rojo {
+    color: red;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+#parrafo_especial {
+    border: 2px solid blueviolet;
+    font-size: 16px;
+}
+
+p strong {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.container > p {
+    border: 1px dashed red;
+}
+
+input[type="text"] {
+    width: 350px;
+}
+
+input[type="number"] {
+    height: 100px;
+}
+
+input, textarea {
+    border: 3px solid purple;
+}
+
+#color {
+    color: rgb(58, 155, 168);
+    background-color: yellow;
+}
+
+.tamano {
+    background-color: aquamarine;
+    width:400px; /* ancho */
+    height: 50px; /* alto */
+}
+
+.texto {
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.fondo {
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+
+    background-color: aqua;
+    background-image: url(../img/aurorita.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#modelo_caja {
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    /*margin: margen entre el elemento y la página*/
+    margin: 20px;
+    margin-top: 100px;
+    margin: 50px 15px; /*arriba-abajo derecha-izquierda*/
+    margin: 50px 15px 100px 200px; /*reloj arr-der-ab-izq*/
+    /*pading: espacio interno*/
+    padding: 20px;
+    padding-top: 50px;
+    padding: 100px 50px;
+    /*border: linea que rodea la caja*/
+    border: 2px solid black;
+    /*centrar un div*/
+    
+}
+
+.in-line{
+    /*pone los elementos en unalinea pero no se pueda dar tamaño*/
+    display: inline;
+}
+
+.block{
+    /*despliega el elemento como bloque. No puede haber nada en la misma línea. Si puede cambiar el tamaño*/
+    display: block;
+}
+
+.inline-block{
+    /*me permite colocar los elementos en una sola linea y darles tamaño*/
+    display: inline-block;
+    width: 300px;
+    border: 1px solid black;
+    vertical-align: top; /*top, middle, bottom*/
+}
+
+#div1{
+    height: 150px;
+}
+
+#div2{
+    height: 300px;
+}
+
+#div3{
+    height: 500px;
+}

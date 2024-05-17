@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container{
+    border: 3px solid black;
+    height: 1500px;
+}
+.element{
+    background-color: gray;
+    padding: 10px;
+}
+.main-element{
+    background-color: yellow;
+    padding: 10px;
+    /*position: static - posicion fija, no se mueve
+    position: relative - permite usar propiedades de movimientos - top,left,etc sin afectar a los demas elementos
+    position: absolute - se mueve en base al contenedor sin 
+    position: fixed - no se ve afectado por el scroll, ignora elementos de arededor
+    position: sticky - mantiene su posicion original, al hacer scroll s pega en la ventana mateniedo posicion origuinal - ej barra de navegacion*/
+    position: sticky;
+    /*movimiento top,left,right,left*/
+    top: 20px;
+    left: 15px;
+    /*z-index:se encarga da las distintas capas. mientras mayor sea el valor mas adelante se pone*/
+}

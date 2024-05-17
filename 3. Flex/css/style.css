@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+section, div{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+.container1{
+    background-color: red;
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    /*acomodo vertical*/
+    align-items: stretch;
+    /*acomodo horizontal*/
+    justify-content: flex-start;
+    /*direccion*/
+    flex-direction: row;
+    /*si no cabe el elemento lo pone abajo*/
+    flex-wrap: wrap;
+}
+.container1 section{
+    width: 200px;
+    background-color: yellow;
+}
+.container2{
+    background-color: violet;
+    width: 1200px;
+    height: 200px;
+    display: flex;
+}
+.container2 section{
+    background-color: white;
+    flex: 1; /*section1=1 espacio, section2=1 espacio,etc-total 3= 1espacio/3*/
+}
+.container2 .section2{
+    flex: 2;
+}
+.container2 .section3{
+    flex: 3;
+}

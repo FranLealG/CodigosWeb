@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> <!--tipo de caracteres -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intro HTML</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Encabezada 1</h1>
+        <h2>Encabezado 2</h2>
+        <h3>Encabezado 3</h3>
+        <h4 class="rojo subrayado">Encabezado 4</h4>
+        <h5>Encabezado 5</h5>
+        <h6>Encabezado 6</h6>
+        <p class="rojo">Prueba de párrado 1</p>
+        <p id="parrafo_especial"> <!-- alt+z visualizar en el campo-->
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor doloremque praesentium porro numquam laudantium ad unde assumenda quaerat reiciendis, harum corporis voluptates magni quod illo mollitia maiores! Adipisci, voluptatem doloribus?
+        </p>
+        <p>
+            parrafo con etiqueta <strong>strong</strong>
+        </p>
+        <strong>STRONG fuera del párrafo</strong><br>
+
+        <div class="container">
+            <p>Párrafo. Elemento hijo</p>
+            <div>
+                <p>Párrafo. Elemento nieto</p>
+            </div>
+            <p>Párrafo. También es hijo</p>
+        </div>
+
+
+        <!-- ancho, ancha=enlace, hipervinculo Enlaca-->
+        <a href="http://google.com" target="_blank">Ir a Google</a>
+        
+        <h2>Lista desordenada</h2>
+        <!-- unordered list-->
+        <ul>
+            <li>Gato</li>
+            <li>Perro</li>
+            <li>Vaca</li>
+            <li>Pudú</li>
+            <li>Oveja</li>
+        </ul>
+
+        <h2>Lista ordenada</h2>
+        <!-- ordered list-->
+        <ol>
+            <li>Entrar a la clase</li>
+            <li>Ir al super</li>
+            <li>Hacer almuerzo</li>
+            <li>Tiempo libre</li>
+        </ol>
+
+        <h2>Tablas</h2>
+        <table>
+            <thead> <!-- encabezado de la tabla-->
+                <tr> <!-- table row: fil-->
+                    <th>Encabezado 1</th> <!-- table heading: encabezado de la fila-->
+                    <th>Encabezado 2</th>
+                    <th>Encabezado 3</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>columna1.1</td>
+                    <td>columna2.1</td>
+                    <td>columna3.1</td>
+                </tr>
+                <tr>
+                    <td>columna1.2</td>
+                    <td>columna2.2</td>
+                    <td>columna3.2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <img src="img/aurorita.jpg" alt="Aurorita">
+
+        <!--action="/url-ADondeSeEnviaLaInfo -- # que la info se mantenga en el lugar/no va a ningun lado-->
+        <form action="#" method="post">
+            <div>
+                <label>Llena estos campos:</label>
+                <input type="text" name="input_texto" >
+                <input type="number" name="input_num">
+                <input type="password" name="input_pass">
+                <input type="date" name="input_date">
+                <input type="email" name="input_mail">
+            </div>
+            <div>
+                <label for="casado_id">Casado</label>
+                <input type="radio" id="casado_id" value="casado" name="estado_civil"><br>
+                <label for="soltero_id">Soltero</label>
+                <input type="radio" id="soltero_id" value="soltero" name="estado_civil"><br>
+            </div>
+            <div>
+                <input type="checkbox" name="mayor_edad" id="mayor">
+                <label for="mayor">Es mayor de edad?</label>
+            </div>
+            <div>
+                <select name="lenguaje">
+                    <option value="py">Python</option>
+                    <option value="j">Java</option>
+                    <option value="c">C#</option>
+                </select>
+            </div>
+            <div>
+                <textarea name="Comentario"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Guardar Info">
+            </div>
+
+        </form>
+
+        <h3 id="color">Prueba de color</h3>
+
+        <div class="tamano"></div>
+
+        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugit esse voluptatum vitae molestiae. Magni perferendis tenetur corporis adipisci dolore nobis, ea earum, rem ad nemo sint tempora enim modi.</p>
+        <div class="fondo"></div>
+        <div id="modelo_caja">
+            Modelo de caja
+        </div>
+
+        <h3 class="in-line">Titulo prueba 1</h3>
+        <h3 class="in-line">Titulo prueba 2</h3>
+        <h3 class="in-line">Titulo prueba 3</h3>
+
+        <a href="#" class="block">Enlace 1</a>
+        <a href="#" class="block">Enlace 2</a>
+        <a href="#" class="block">Enlace 3</a>
+
+        <div id="div1" class="inline-block"></div>
+        <div id="div2" class="inline-block"></div>
+        <div id="div3" class="inline-block"></div>
+
+    </body>
+</html>
